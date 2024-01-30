@@ -134,7 +134,7 @@ export function Erd({ god }: { god: God }) {
     setEdges(edges)
   }, [god])
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
+    <div style={{ width: '100vw', height: '100vh',backgroundColor:'HSL(200,33%,96%)' }}>
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -147,7 +147,7 @@ export function Erd({ god }: { god: God }) {
       >
         <Controls />
         <MiniMap />
-        <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
+        {/*<Background variant={BackgroundVariant.Cross} gap={12} size={1} />*/}
       </ReactFlow>
     </div>
   )
